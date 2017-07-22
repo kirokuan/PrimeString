@@ -1,0 +1,7 @@
+c:\users\kiro.guan75\documents\visual studio 2013\Projects\PrimeString\PrimeString\bin\Debug\PrimeString.dll
+c:\users\kiro.guan75\documents\visual studio 2013\Projects\PrimeString\PrimeString\bin\Debug\PrimeString.pdb
+c:\users\kiro.guan75\documents\visual studio 2013\Projects\PrimeString\PrimeString\bin\Debug\nunit.framework.dll
+c:\users\kiro.guan75\documents\visual studio 2013\Projects\PrimeString\PrimeString\bin\Debug\nunit.framework.xml
+c:\users\kiro.guan75\documents\visual studio 2013\Projects\PrimeString\PrimeString\obj\Debug\PrimeString.csprojResolveAssemblyReference.cache
+c:\users\kiro.guan75\documents\visual studio 2013\Projects\PrimeString\PrimeString\obj\Debug\PrimeString.dll
+c:\users\kiro.guan75\documents\visual studio 2013\Projects\PrimeString\PrimeString\obj\Debug\PrimeString.pdb
