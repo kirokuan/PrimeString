@@ -38,5 +38,14 @@ namespace PrimeString.Test
             Assert.AreEqual("n/a", Extension.AverageString("pjebqo, six, four, one, four"));
            
         }
+
+        [Test]
+        public void DeadAntsTests()
+        {
+            Assert.AreEqual(0, Extension.DeadAntCount("ant ant ant ant"));
+            Assert.AreEqual(0, Extension.DeadAntCount(null));
+            Assert.AreEqual(2, Extension.DeadAntCount("ant anantt aantnt"));
+            Assert.AreEqual(1, Extension.DeadAntCount("ant ant .... a nt"));
+        }
     }
 }

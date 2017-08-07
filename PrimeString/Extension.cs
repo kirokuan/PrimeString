@@ -20,6 +20,35 @@ namespace PrimeString
             }
             return true;
         }
+        public static int DeadAntCount(string ants)
+        {
+            if (ants == null) return 0;
+
+            int antsCount =new []{CountChar(ants, 'a')
+                , CountChar(ants, 't'), CountChar(ants, 'n')}.Max();
+            int completeAnt = 0;
+            var start = 0;
+            while(start!= ants.Length-1)
+            {
+                var i=ants.IndexOf("ant",start);
+                if (i > -1)
+                {
+                    completeAnt++;
+                    start = i+1;
+                }
+                else
+                {
+                    break;
+                }
+            }
+
+            return antsCount-completeAnt;
+        }
+
+        private static int CountChar(string ants, char ch)
+        {
+            return ants.ToCharArray().Count(c => c == ch);
+        }
 
         public static string AverageString(string str)
         {
