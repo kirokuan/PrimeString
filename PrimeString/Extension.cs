@@ -26,23 +26,28 @@ namespace PrimeString
 
             int antsCount =new []{CountChar(ants, 'a')
                 , CountChar(ants, 't'), CountChar(ants, 'n')}.Max();
-            int completeAnt = 0;
+            var completeAnt = GetOccurance(ants, "ant");
+            return antsCount-completeAnt;
+        }
+
+        private static int GetOccurance(string ants, string substr)
+        {
+            int occurance = 0;
             var start = 0;
-            while(start!= ants.Length-1)
+            while (start < ants.Length)
             {
-                var i=ants.IndexOf("ant",start);
+                var i = ants.IndexOf(substr, start);
                 if (i > -1)
                 {
-                    completeAnt++;
-                    start = i+1;
+                    occurance++;
+                    start = i + 1;
                 }
                 else
                 {
                     break;
                 }
             }
-
-            return antsCount-completeAnt;
+            return occurance;
         }
 
         private static int CountChar(string ants, char ch)
