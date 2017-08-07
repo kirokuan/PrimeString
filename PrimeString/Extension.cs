@@ -23,11 +23,12 @@ namespace PrimeString
 
         public static string AverageString(string str)
         {
-            return changeStr((int) str.Split(' ').Select(changeNum).Average());
+            var s=str.Split(' ').Select(ChangeNum);
+            return s.Contains(-1)?"n/a":ChangeStr((int) s.Average());
         }
 
 
-        private static string changeStr(int i)
+        private static string ChangeStr(int i)
         {
             switch (i)
             {
@@ -51,12 +52,11 @@ namespace PrimeString
                     return "nine";
                 case 0:
                     return "zero";
-                case -1: return "n/a";
             }
             return "n/a";
         }
 
-        private static int changeNum(string str)
+        private static int ChangeNum(string str)
         {
             switch (str)
             {

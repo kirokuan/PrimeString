@@ -35,6 +35,8 @@ namespace PrimeString.Test
             Assert.AreEqual("zero", Extension.AverageString("zero zero zero zero zero"));
             Assert.AreEqual("two", Extension.AverageString("one one eight one"));
             Assert.AreEqual("n/a", Extension.AverageString(""));
+            Assert.AreEqual("n/a", Extension.AverageString("pjebqo, six, four, one, four"));
+           
         }
     }
 }
