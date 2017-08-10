@@ -9,7 +9,7 @@ namespace PrimeString.Test
         [TestCase("sandles", ExpectedResult = "Sandlesandles")]
         public string SimpleCase(string brand)
         {
-            return (new BandNameGenerator(brand)).GetName();
+            return (new BandNameGenerator(brand)).GetName("The ");
         }
     }
 }

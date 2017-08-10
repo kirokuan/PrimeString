@@ -8,6 +8,7 @@ namespace PrimeString
 {
     class BandNameGenerator
     {
+        private const string prefix = "The ";
         private string Brand { get; set; }
         public BandNameGenerator(string brand)
         {
@@ -24,7 +25,7 @@ namespace PrimeString
                 var newBrand = FirstUpper(Brand) + Brand.Substring(1);
                 return newBrand;
             }
-            return "The " + FirstUpper(Brand);
+            return prefix + FirstUpper(Brand);
         }
 
         private static string FirstUpper(string str)
